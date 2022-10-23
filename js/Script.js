@@ -11,10 +11,12 @@ const age = Number(document.getElementById("age"));
 console.log(typeof age, age);
 
 // 4. Calcolo del prezzo del bilgietto
+
 const btnGenerate = document.getElementById("btn-generate")
 btnGenerate.addEventListener(`click`, function() {
 
     let price = km * 0.21;
+    console.log( typeof price, price)
     
     //   4a. Applico sconto del 20% SE l'utente è minorenne, oppure del 40% SE l'utente è over 65
     if (age < 18) {
@@ -22,5 +24,7 @@ btnGenerate.addEventListener(`click`, function() {
     } else if (age > 64) {
         price -= price * 0.4
     };
-    console.log(price.toFixed(2));
+
 });
+
+console.log(price.toFixed(2));
