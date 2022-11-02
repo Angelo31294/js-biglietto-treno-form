@@ -5,7 +5,7 @@
 // - il prezzo del biglietto è definito in base ai km (0.21 € al km)
 // - va applicato uno sconto del 20% per i minorenni
 // - va applicato uno sconto del 40% per gli over 65.
-// const btnTicketGenerator = document.getElementById("generator");
+const btnTicketGenerator = document.getElementById("generator");
 const ticketForm = document.getElementById("ticket-form");
 const btnTicketReset = document.getElementById("reset");
 const ticketContainer =  document.querySelector('.ticket-container');
